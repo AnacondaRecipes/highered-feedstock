@@ -33,6 +33,8 @@ test:
     - pip
   commands:
     - pip check
+    # in the absence of tests, try a line from example.py
+    - python -c "import highered; ed = highered.CRFEditDistance()"
 
 about:
   home: https://github.com/dedupeio/highered
